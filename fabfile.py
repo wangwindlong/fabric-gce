@@ -19,6 +19,6 @@ def deploy_bak():
 
 def deploy():
     with cd('/home/wang20064412/workspace/python/fabric-gce'):
-        run('git pull')
+        run('git pull origin master')
         sudo('supervisorctl restart todo')
         sudo('supervisorctl status')
